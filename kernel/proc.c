@@ -43,6 +43,21 @@ proc_mapstacks(pagetable_t kpgtbl) {
 }
 
 
+void count_procs(void){
+	struct proc *p;
+	int proc_count = 0;
+	for(p = proc; p < &proc[NPROC]; p++)
+	{
+		if(p->state == UNUSED){
+			continue;
+		}
+		proc_count++;
+	}
+
+	printf("Number of processes used: %d\n", proc_count);
+}
+
+
 //testing lab1
 void print_hello(int n)
 {

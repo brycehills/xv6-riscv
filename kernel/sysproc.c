@@ -13,6 +13,11 @@ uint64 sys_info(void)
     int n;
     argint(0,&n);
     print_hello(n);
+    if(n == 1)
+    {
+	//code for first case - count syscalls
+	count_procs();
+    }
     //add logic code here
     return 0;
 }
