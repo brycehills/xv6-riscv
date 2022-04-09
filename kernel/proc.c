@@ -42,6 +42,13 @@ proc_mapstacks(pagetable_t kpgtbl) {
   }
 }
 
+
+//testing lab1
+void print_hello(int n)
+{
+    printf("hello from lab1 %d\n", n);
+}
+
 // initialize the proc table at boot time.
 void
 procinit(void)
