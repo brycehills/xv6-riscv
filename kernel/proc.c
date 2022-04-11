@@ -42,6 +42,12 @@ proc_mapstacks(pagetable_t kpgtbl) {
   }
 }
 
+void count_syscalls(void){
+  struct proc *p = myproc();
+  int sc_count = p->syscall_count;
+  printf("number of system calls by current process: %d\n", sc_count);
+
+}
 
 void count_procs(void){
 	struct proc *p;

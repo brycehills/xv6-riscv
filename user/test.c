@@ -9,9 +9,12 @@ int main(int argc, char *argv[]){
     {
         n = atoi(argv[1]);
     }
-    printf("say hello to kernel %d\n",n);
+    //printf("say hello to kernel %d\n",n);
     info(n);
-	info(1);
+
+    info(1);
+    info(2);
+
     exit(0);
 
 }

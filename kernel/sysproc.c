@@ -12,11 +12,15 @@ uint64 sys_info(void)
 {
     int n;
     argint(0,&n);
-    print_hello(n);
+    print_hello(n);//test prior to lab1 - not needed
+
     if(n == 1)
     {
-	//code for first case - count syscalls
-	count_procs();
+	count_syscalls();
+    }
+    else if(n == 2)
+    {
+        count_procs();      
     }
     //add logic code here
     return 0;
