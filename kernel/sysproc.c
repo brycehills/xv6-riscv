@@ -22,6 +22,10 @@ uint64 sys_info(void)
     {
         count_procs();      
     }
+    else if(n ==3)
+    {
+        count_mempages();
+    }
     //add logic code here
     return 0;
 }

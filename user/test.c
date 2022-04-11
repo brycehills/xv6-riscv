@@ -14,6 +14,7 @@ int main(int argc, char *argv[]){
 
     info(1);
     info(2);
+    info(3);
 
     exit(0);
 

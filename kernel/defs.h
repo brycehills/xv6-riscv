@@ -107,6 +107,8 @@ void            procdump(void);
 void		print_hello(int); //hello lab 1 test
 void		count_procs(void); //lab1 - count procs print
 void            count_syscalls(void); //lab 1 - count system calls print
+void		count_mempages(void); //lab 1 - count number of memory pages 
+
 // swtch.S
 void            swtch(struct context*, struct context*);
 
