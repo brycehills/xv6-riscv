@@ -62,13 +62,13 @@ void count_procs(void){
 		proc_count++;
 	}
 
-	printf("Number of processes used: %d\n", proc_count);
+	printf("Number of processes in the system:  %d\n", proc_count);
 }
 
 void count_mempages(void){
     struct proc *p = myproc();
     uint64 pages = p->sz/PGSIZE;
-    printf("number of pages in the current process: %d\n", pages);
+    printf("number of memory pages the current process is using: %d\n", pages);
 }
 
 //testing lab1

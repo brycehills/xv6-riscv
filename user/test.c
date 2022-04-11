@@ -5,16 +5,15 @@
 int main(int argc, char *argv[]){
 
     int n = 0;
-    if (argc >= 2)
+    if (argc == 2) //we need exactly 2 arguments
     {
         n = atoi(argv[1]);
+	info(n);
     }
-    //printf("say hello to kernel %d\n",n);
-    info(n);
-
-   // info(1);
-   // info(2);
-   // info(3);
+    else
+    {
+	printf("error - invalid input \n");
+    }
 
     exit(0);
 
