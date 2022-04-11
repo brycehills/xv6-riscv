@@ -12,9 +12,9 @@ int main(int argc, char *argv[]){
     //printf("say hello to kernel %d\n",n);
     info(n);
 
-    info(1);
-    info(2);
-    info(3);
+   // info(1);
+   // info(2);
+   // info(3);
 
     exit(0);
 

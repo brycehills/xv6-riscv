@@ -12,7 +12,7 @@ uint64 sys_info(void)
 {
     int n;
     argint(0,&n);
-    print_hello(n);//test prior to lab1 - not needed
+    //print_hello(n);//test prior to lab1 - not needed
 
     if(n == 1)
     {
@@ -26,7 +26,6 @@ uint64 sys_info(void)
     {
         count_mempages();
     }
-    //add logic code here
     return 0;
 }
 
