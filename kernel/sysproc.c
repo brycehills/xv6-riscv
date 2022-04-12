@@ -26,6 +26,10 @@ uint64 sys_info(void)
     {
         count_mempages();
     }
+    else
+    {
+        printf("invalid input, enter values(1-3)\n");
+    }
     return 0;
 }
 

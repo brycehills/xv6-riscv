@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
     }
     else
     {
-	printf("error - invalid input \n");
+	printf("error - invalid input - too many arguments! \n");
     }
 
     exit(0);
