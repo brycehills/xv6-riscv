@@ -52,8 +52,7 @@ void count_syscalls(void){
 void count_procs(void){
 	struct proc *p;
 	int proc_count = 0;
-
-
+	acquire(&proc->lock); 
 	for(p = proc; p < &proc[NPROC]; p++)
 	{
 		if(p->state == UNUSED){
@@ -61,7 +60,7 @@ void count_procs(void){
 		}
 		proc_count++;
 	}
-
+	release(&proc->lock);
 	printf("Number of processes in the system:  %d\n", proc_count);
 }
 

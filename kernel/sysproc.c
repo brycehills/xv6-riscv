@@ -16,7 +16,7 @@ uint64 sys_info(void)
 
     if(n == 1)
     {
-	count_procs();
+	  count_procs();
     }
     else if(n == 2)
     {
